@@ -8,11 +8,19 @@
     cursor: pointer;
     border: solid;
     margin: 10px;
-  }
+    transition: opacity 0.3s;
 
-  .Uberbutton:hover{
-    background-color: rgb(188, 235, 245);
+    
   }
+  .Uberbutton:hover{
+    background-color: rgb(1, 0, 0);
+    opacity: 0.6;
+    transition:1s;
+  }
+  .Uberbutton:active{
+    opacity: 0.5;
+  }
+  
 
 </style>
 <button class="Uberbutton">
@@ -30,11 +38,47 @@
     border-color: rgb(255,216,20);
     border-radius: 30px;
     margin: 10px;
+    transition: 1s ;
   }
   .Amazonbutton:hover{
     background-color: lightyellow;
   }
+  .Amazonbutton:active{
+    
+    opacity: 0.7;
+  }
 </style>
 <button class="AmazonButton">
   Add to cart
+</button>
+</style>
+
+<style>
+  .mybutton{
+    background-color: rgb(251, 127, 81);
+    color: whitesmoke;
+    border: none;
+    cursor: pointer; 
+    border: solid;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 30px;
+    margin: 10px;
+    
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .mybutton:hover{
+    background-color: rgb(252, 131, 252);
+    transition: 1.3s;
+  }
+  .mybutton:active{
+    background-color: rgb(244, 228, 240);
+    opacity: 0.4;
+  }
+</style>
+<button class="mybutton">
+  This is my button
 </button>
